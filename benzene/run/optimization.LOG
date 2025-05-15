@@ -1,0 +1,55 @@
+Executable      : siesta
+Version         : 5.2.1
+Architecture    : x86_64
+Compiler version: GNU-13.3.0
+Compiler flags  : -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem <prefix>/include -I<prefix>/_build_env/include -fdebug-prefix-map=<prefix>/work=/usr/local/src/conda/siesta-5.2.1 -fdebug-prefix-map=<prefix>=/usr/local/src/conda-prefix -I<prefix>/lib -fallow-argument-mismatch -O3
+Parallelisations: none
+NetCDF support
+NetCDF-4 support
+Lua support
+DFT-D3 support
+
+Runtime information:
+* Directory : /home/samba/homes/convidat/Siesta/benzene/run
+* Running in serial mode.
+>> Start of run:  15-MAY-2025  12:00:24
+
+                           *********************** 
+                           *  WELCOME TO SIESTA  * 
+                           *********************** 
+
+ NOTE: Siesta V5 introduces some new defaults for basis-set generation
+ NOTE: which might lead to slightly different numerical results.
+ NOTE: Please see the manual for full details and compatibility measures.
+
+Cannot find requested input file "optimitzation.fdf".
+Cannot find requested input file "optimitzation.fdf".
+Stopping Program from Node:    0
+Stopping Program from Node:    0
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7a31ac223960 in ???
+#1  0x7a31ac222ac5 in ???
+#2  0x7a31abe4251f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x7a31abe969fc in __pthread_kill_implementation
+	at ./nptl/pthread_kill.c:44
+#4  0x7a31abe969fc in __pthread_kill_internal
+	at ./nptl/pthread_kill.c:78
+#5  0x7a31abe969fc in __GI___pthread_kill
+	at ./nptl/pthread_kill.c:89
+#6  0x7a31abe42475 in __GI_raise
+	at ../sysdeps/posix/raise.c:26
+#7  0x7a31abe287f2 in __GI_abort
+	at ./stdlib/abort.c:79
+#8  0x650f04ca9fbd in ???
+#9  0x650f04a1174d in ???
+#10  0x650f04a070b4 in ???
+#11  0x7a31abe29d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#12  0x7a31abe29e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#13  0x650f04a07212 in ???
+#14  0xffffffffffffffff in ???
